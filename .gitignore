@@ -1,0 +1,57 @@
+﻿# ---------------------------
+# Visual Studio / .NET Ignore File
+# ---------------------------
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Screenshots from automated tests
+[Ss]creenshots/
+
+# Visual Studio cache and settings
+.vs/
+*.dbmdl
+*.dbproj.schemaview
+*.pdb
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Other
+*.cache
+*.log
+*.zip
+*.bak
+*.tmp
+*.DS_Store
+
+# Local environment / temp files
+.env

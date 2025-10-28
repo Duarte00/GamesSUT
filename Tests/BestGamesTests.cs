@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 
-namespace GamesSUT.Tests
+namespace GamesSUT.Tests.Tests
 {
     [TestFixture]
     public class BestGamesTests
@@ -14,26 +14,24 @@ namespace GamesSUT.Tests
         private IWebDriver Driver;
         private readonly List<string> ExpectedBestGames = new()
         {
-            "8 Ball Pool",
             "Arkadium Bubble Shooter",
-            "Arkadium Word Wipe Game",
-            "Block Champ",
-            "Card Sharks",
-            "Crystal Collapse",
-            "Crystal Collapse Summer Nights",
-            "Family Feud",
             "Free Online Bridge",
             "Free Online Daily Crossword Puzzle",
-            "Free Online Classic Solitaire",
-            "Fruit Merge: A Suika Game",
+            "Family Feud",
             "Hurdle",
-            "Jewel Shuffle",
-            "Mahjongg Dimensions",
             "Mahjongg Solitaire",
             "Outspell Spelling Game",
             "Spider Solitaire Game",
             "The Price Is Right Plinko Pegs",
-            "Who Wants to Be a Millionaire?"
+            "Who Wants to Be a Millionaire?",
+            "Arkadium Word Wipe Game",
+            "8 Ball Pool",
+            "Block Champ",
+            "Card Sharks",
+            "Crystal Collapse Summer Nights",
+            "Freecell Solitaire",
+            "Jewel Shuffle"
+
         };
 
         [SetUp]
@@ -76,7 +74,7 @@ namespace GamesSUT.Tests
             // Save a screenshot for debugging
             var screenshot = ((ITakesScreenshot)Driver).GetScreenshot();
             var screenshotPath = $"Screenshots/VerifyAllBestGamesAreDisplayed_{DateTime.Now:yyyyMMdd_HHmmss}.png";
-            screenshot.SaveAsFile(screenshotPath, ScreenshotImageFormat.Png);
+            screenshot.SaveAsFile(screenshotPath);
             Console.WriteLine($"Screenshot saved: {screenshotPath}");
 
             // Assert all expected games are present
